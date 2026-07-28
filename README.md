@@ -1,5 +1,6 @@
 # GeoNavKit
 
+[![CocoaPods](https://img.shields.io/cocoapods/v/GeoNavKit.svg)](https://cocoapods.org/pods/GeoNavKit)
 [![Swift](https://img.shields.io/badge/Swift-5.9%2B-orange.svg)](https://swift.org)
 [![Platforms](https://img.shields.io/badge/platforms-iOS%2015%2B%20%7C%20macOS%2012%2B-blue.svg)](#requirements)
 [![SPM](https://img.shields.io/badge/SwiftPM-compatible-brightgreen.svg)](https://swift.org/package-manager)
