@@ -33,16 +33,26 @@ a `static` function on a namespace `enum`, so there is no state to manage.
 ### Swift Package Manager
 
 Add the dependency in Xcode via **File → Add Package Dependencies…** with the
-repository URL, or in your `Package.swift`:
+URL `https://github.com/ishantve/GeoNavKit.git`, or in your `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/<your-org>/GeoNavKit.git", from: "1.0.0")
+    .package(url: "https://github.com/ishantve/GeoNavKit.git", from: "1.0.0")
 ],
 targets: [
     .target(name: "YourTarget", dependencies: ["GeoNavKit"])
 ]
 ```
+
+### CocoaPods
+
+Add to your `Podfile`:
+
+```ruby
+pod 'GeoNavKit', '~> 1.0'
+```
+
+then run `pod install`.
 
 ## Usage
 
