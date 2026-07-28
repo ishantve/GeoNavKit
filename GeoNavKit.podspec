@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'GeoNavKit'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'Lightweight, dependency-free geospatial math for Swift.'
   s.description      = <<-DESC
     Great-circle bearing/distance/destination, nautical-mile conversion,
