@@ -98,7 +98,7 @@ GeoNavKit is also available as faithful ports with the same API, in this repo:
 | Platform | Package | Install |
 |---|---|---|
 | JS / TS / React Native / Expo | [`@ishant89/react-native-geonavkit`](packages/react-native-geonavkit) | `npm install @ishant89/react-native-geonavkit` |
-| Unity (C#) | [`com.zibaltech.geonavkit`](packages/unity/com.zibaltech.geonavkit) | Package Manager → Add from git URL |
+| Unity (C#) | [`com.ishant89.geonavkit`](packages/unity/com.ishant89.geonavkit) | Package Manager → Add from git URL |
 
 Neither port contains native code — both are pure maths, so there is nothing to
 link on any platform. The one deliberate difference: `distanceMeters` is

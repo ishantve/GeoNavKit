@@ -158,7 +158,7 @@ coordinate(latitude, longitude): Coordinate  // convenience constructor
 | Platform | Package |
 |---|---|
 | Swift (iOS/macOS) | [`GeoNavKit`](https://github.com/ishantve/GeoNavKit) — SPM + CocoaPods |
-| Unity (C#) | [`com.zibaltech.geonavkit`](https://github.com/ishantve/GeoNavKit/tree/main/packages/unity) — UPM |
+| Unity (C#) | [`com.ishant89.geonavkit`](https://github.com/ishantve/GeoNavKit/tree/main/packages/unity) — UPM |
 
 ## License
 

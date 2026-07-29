@@ -1,8 +1,8 @@
 {
-    "name": "ZibalTech.GeoNavKit.Tests",
+    "name": "Ishant89.GeoNavKit.Tests",
     "rootNamespace": "GeoNavKit.Tests",
     "references": [
-        "ZibalTech.GeoNavKit",
+        "Ishant89.GeoNavKit",
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner"
     ],

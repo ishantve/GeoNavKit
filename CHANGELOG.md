@@ -10,9 +10,9 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - **npm package** `@ishant89/react-native-geonavkit` (`packages/react-native-geonavkit`) — TypeScript port for
   React Native, Expo, web and Node. No native module. See its
   [CHANGELOG](packages/react-native-geonavkit/CHANGELOG.md).
-- **Unity package** `com.zibaltech.geonavkit` (`packages/unity`) — C# port
+- **Unity package** `com.ishant89.geonavkit` (`packages/unity`) — C# port
   distributed over UPM. See its
-  [CHANGELOG](packages/unity/com.zibaltech.geonavkit/CHANGELOG.md).
+  [CHANGELOG](packages/unity/com.ishant89.geonavkit/CHANGELOG.md).
 - Both ports keep the Swift API surface; `distanceMeters` uses Vincenty's
   inverse formula (WGS-84) in place of `CLLocation.distance(from:)`.
 
