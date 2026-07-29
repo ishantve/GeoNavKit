@@ -4,3 +4,12 @@
 xcuserdata/
 *.xcodeproj
 Package.resolved
+
+# JavaScript / npm package
+node_modules/
+packages/react-native-geonavkit/dist/
+*.tgz
+
+# Unity — .meta files are regenerated on import
+*.csproj
+*.sln
