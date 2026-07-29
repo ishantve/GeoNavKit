@@ -18,13 +18,13 @@ plain .NET code alike.
 **Window → Package Manager → + → Add package from git URL…** and paste:
 
 ```
-https://github.com/ishantve/GeoNavKit.git?path=packages/unity/com.ishant89.geonavkit
+https://github.com/ishantve/GeoNavKit.git?path=platforms/unity
 ```
 
 Pin a version by appending a tag:
 
 ```
-https://github.com/ishantve/GeoNavKit.git?path=packages/unity/com.ishant89.geonavkit#unity-v1.0.1
+https://github.com/ishantve/GeoNavKit.git?path=platforms/unity#1.0.2
 ```
 
 ### Via `manifest.json`
@@ -34,7 +34,7 @@ Add to `Packages/manifest.json`:
 ```json
 {
   "dependencies": {
-    "com.ishant89.geonavkit": "https://github.com/ishantve/GeoNavKit.git?path=packages/unity/com.ishant89.geonavkit#unity-v1.0.1"
+    "com.ishant89.geonavkit": "https://github.com/ishantve/GeoNavKit.git?path=platforms/unity#1.0.2"
   }
 }
 ```

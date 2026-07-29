@@ -33,27 +33,46 @@ a `static` function on a namespace `enum`, so there is no state to manage.
 
 ### Swift Package Manager
 
-Add the dependency in Xcode via **File → Add Package Dependencies…** with the
-URL `https://github.com/ishantve/GeoNavKit.git`, or in your `Package.swift`:
-
 ```swift
 dependencies: [
-    .package(url: "https://github.com/ishantve/GeoNavKit.git", from: "1.0.0")
-],
-targets: [
-    .target(name: "YourTarget", dependencies: ["GeoNavKit"])
+    .package(url: "https://github.com/ishantve/GeoNavKit.git", from: "1.0.2")
 ]
 ```
 
 ### CocoaPods
 
-Add to your `Podfile`:
-
 ```ruby
 pod 'GeoNavKit', '~> 1.0'
 ```
 
-then run `pod install`.
+### React Native (iOS + Android)
+
+```sh
+npm install @ishant89/react-native-geonavkit
+```
+
+```ts
+import { Geo } from '@ishant89/react-native-geonavkit';
+const heading = Geo.bearing(from, to);
+```
+
+No `pod install` — the port is pure TypeScript, so there is nothing to link.
+See [platforms/react-native](platforms/react-native).
+
+### Unity
+
+Add via **Package Manager → Add package from git URL**:
+
+```
+https://github.com/ishantve/GeoNavKit.git?path=platforms/unity#1.0.2
+```
+
+```csharp
+using GeoNavKit;
+var heading = Geo.Bearing(from, to);
+```
+
+See [platforms/unity](platforms/unity).
 
 ## Usage
 
@@ -91,24 +110,12 @@ let dots = TrailSampler.equalSpaced(from: recentPositions, count: 6)
 | Platforms | iOS 15+, macOS 12+ |
 | Dependencies | none (Foundation, CoreLocation) |
 
-## Other platforms
-
-GeoNavKit is also available as faithful ports with the same API, in this repo:
-
-| Platform | Package | Install |
-|---|---|---|
-| JS / TS / React Native / Expo | [`@ishant89/react-native-geonavkit`](packages/react-native-geonavkit) | `npm install @ishant89/react-native-geonavkit` |
-| Unity (C#) | [`com.ishant89.geonavkit`](packages/unity/com.ishant89.geonavkit) | Package Manager → Add from git URL |
-
-Neither port contains native code — both are pure maths, so there is nothing to
-link on any platform. The one deliberate difference: `distanceMeters` is
-implemented with Vincenty's inverse formula (WGS-84) instead of
-`CLLocation.distance(from:)`, which agrees with CoreLocation to well under a
-meter.
-
 ## Notes on accuracy
 
-- `distanceMeters` uses `CLLocation.distance(from:)` (ellipsoidal / WGS-84).
+- `distanceMeters` uses `CLLocation.distance(from:)` (ellipsoidal / WGS-84). The
+  React Native and Unity ports use Vincenty's inverse formula instead, since
+  CoreLocation is unavailable there; it agrees with CoreLocation to well under a
+  meter.
 - `offset` uses a spherical model (mean Earth radius 6,371 km). Over short
   ranges the two agree to within ~0.1%; for sub-meter precision at large
   distances, prefer a dedicated geodesic library.

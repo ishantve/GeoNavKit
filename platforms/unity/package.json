@@ -1,6 +1,6 @@
 {
   "name": "com.ishant89.geonavkit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "displayName": "GeoNavKit",
   "description": "Lightweight, dependency-free geospatial math: great-circle bearing/distance/destination, nautical-mile conversion, geographic shape polygons, and path resampling. Pure C#, no UnityEngine dependency in the maths.",
   "unity": "2021.3",
@@ -24,8 +24,8 @@
     "url": "https://github.com/ishantve"
   },
   "license": "MIT",
-  "documentationUrl": "https://github.com/ishantve/GeoNavKit/tree/main/packages/unity/com.ishant89.geonavkit#readme",
-  "changelogUrl": "https://github.com/ishantve/GeoNavKit/blob/main/packages/unity/com.ishant89.geonavkit/CHANGELOG.md",
+  "documentationUrl": "https://github.com/ishantve/GeoNavKit/tree/main/platforms/unity#readme",
+  "changelogUrl": "https://github.com/ishantve/GeoNavKit/blob/main/platforms/unity/CHANGELOG.md",
   "licensesUrl": "https://github.com/ishantve/GeoNavKit/blob/main/LICENSE",
   "hideInEditor": false,
   "samples": [],

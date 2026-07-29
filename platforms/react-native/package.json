@@ -1,6 +1,6 @@
 {
   "name": "@ishant89/react-native-geonavkit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Lightweight, dependency-free geospatial math for React Native, Expo, web and Node — great-circle bearing/distance/destination, nautical-mile conversion, geo shape polygons, and path resampling.",
   "keywords": [
     "react-native",
@@ -19,12 +19,12 @@
     "navigation",
     "typescript"
   ],
-  "homepage": "https://github.com/ishantve/GeoNavKit/tree/main/packages/react-native-geonavkit#readme",
+  "homepage": "https://github.com/ishantve/GeoNavKit/tree/main/platforms/react-native#readme",
   "bugs": "https://github.com/ishantve/GeoNavKit/issues",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ishantve/GeoNavKit.git",
-    "directory": "packages/react-native-geonavkit"
+    "directory": "platforms/react-native"
   },
   "license": "MIT",
   "author": "Ishant <ishant@zibaltech.com>",
