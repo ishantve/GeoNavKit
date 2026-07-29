@@ -91,6 +91,21 @@ let dots = TrailSampler.equalSpaced(from: recentPositions, count: 6)
 | Platforms | iOS 15+, macOS 12+ |
 | Dependencies | none (Foundation, CoreLocation) |
 
+## Other platforms
+
+GeoNavKit is also available as faithful ports with the same API, in this repo:
+
+| Platform | Package | Install |
+|---|---|---|
+| JS / TS / React Native / Expo | [`@ishant89/react-native-geonavkit`](packages/react-native-geonavkit) | `npm install @ishant89/react-native-geonavkit` |
+| Unity (C#) | [`com.zibaltech.geonavkit`](packages/unity/com.zibaltech.geonavkit) | Package Manager → Add from git URL |
+
+Neither port contains native code — both are pure maths, so there is nothing to
+link on any platform. The one deliberate difference: `distanceMeters` is
+implemented with Vincenty's inverse formula (WGS-84) instead of
+`CLLocation.distance(from:)`, which agrees with CoreLocation to well under a
+meter.
+
 ## Notes on accuracy
 
 - `distanceMeters` uses `CLLocation.distance(from:)` (ellipsoidal / WGS-84).

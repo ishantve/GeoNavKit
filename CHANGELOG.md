@@ -4,6 +4,21 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+- **npm package** `@ishant89/react-native-geonavkit` (`packages/react-native-geonavkit`) — TypeScript port for
+  React Native, Expo, web and Node. No native module. See its
+  [CHANGELOG](packages/react-native-geonavkit/CHANGELOG.md).
+- **Unity package** `com.zibaltech.geonavkit` (`packages/unity`) — C# port
+  distributed over UPM. See its
+  [CHANGELOG](packages/unity/com.zibaltech.geonavkit/CHANGELOG.md).
+- Both ports keep the Swift API surface; `distanceMeters` uses Vincenty's
+  inverse formula (WGS-84) in place of `CLLocation.distance(from:)`.
+
+### Changed
+- README: an "Other platforms" section pointing at the two ports.
+
 ## [1.0.1] - 2026-07-28
 
 ### Changed
